@@ -8,10 +8,16 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+      fontFamily: {
+        'header': ['Montserrat'],
+        'body': ['"Open Sans"'],
+      },
+      colors: {
+        slate: '#3D5781',
+        purple: '#6675FF',
+        midnight: '#06001E',
+        calmingBreeze: '#8591FF',
+        ltGrey: '#f2f2f2',
       },
     },
   },
