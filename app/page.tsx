@@ -1,113 +1,195 @@
 import Image from 'next/image'
+import { Star2 } from './icons/Star2'
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">app/page.tsx</code>
+    <main className="flex flex-col items-center gap-2 justify-between md:mt-10 mt-5 md:w-3/4 mx-2 md:mx-auto">
+        <h4 className="font-header font-bold text-2xl text-slate">
+          Welcome, {"{"}NAME{"}"}!
+        </h4>
+        <p className="text-base font-body">
+          Let&#39;s make this easy--Please verify the information below is correct.
         </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
+        <form className="font-body flex flex-col my-5">
+          <label>Store Name*</label>
+          <input></input>
 
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
+          <label>Full Name*</label>
+          <input></input>
 
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
+          <label>Email Address*</label>
+          <input></input>
+
+          <label>Store URL*</label>
+          <input></input>
+
+          <button>Confirm</button>
+        </form>
+
+
+        <div className="font-body flex flex-col gap-2 pt-10">
+          <div className="flex flex-row gap-4 items-center w-full justify-center mb-3">
+            <Star2 className="star" color="#8591FF" />
+            <Star2 className="star" color="#8591FF" />
+            <Star2 className="star" color="#8591FF" />
+            <Star2 className="star" color="#8591FF" />
+            <Star2 className="star" color="#8591FF" />
+          </div>
+          <p className="text-center">
+            “In amet turpis eget donec bibendum sit congue cras. Fusce parturient pulvinar non a nulla dictum sit
+            facilisi aliquet. Posuere tortor egestas orci vel. Ut nulla amet eget habitasse donec urna est iaculis
+            tellus. Vitae morbi lorem suscipit fermentum et.”
           </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+          <div className="font-bold">
+            <p>Craig Craigford, Store Owner</p>
+            <p>June 2023</p>
+          </div>
       </div>
     </main>
   )
 }
+
+// import React from "react";
+// import { StateInactive } from "./icons/StateInactive";
+// import { Star2 } from "./icons/Star2";
+// import { Button } from "./components/Button";
+
+// export default function Desktop () {
+//   return (
+//     <div className="desktop">
+//       <div className="div-2">
+//         <div className="overlap">
+//           <div className="onboarding-menu">
+//             <div className="onboarding-items">
+//               <div className="task">
+//                 <div className="task-2">
+//                   <StateInactive className="icon-radio" color="#06001E" opacity="0.5" />
+//                   <div className="text-wrapper-2">Personal Info</div>
+//                 </div>
+//               </div>
+//               <div className="task-3">
+//                 <div className="task-2">
+//                   <StateInactive className="icon-radio" color="#06001E" opacity="0.5" />
+//                   <div className="text-wrapper-3">Monthly Orders</div>
+//                 </div>
+//                 <div className="text-wrapper-4">Required</div>
+//               </div>
+//               <div className="task-3">
+//                 <div className="task-2">
+//                   <StateInactive className="icon-radio" color="#06001E" opacity="0.5" />
+//                   <div className="text-wrapper-3">Billing</div>
+//                 </div>
+//                 <div className="text-wrapper-4">Required</div>
+//               </div>
+//             </div>
+//             <img className="gradient" alt="Gradient" src="https://c.animaapp.com/nnxc9q4X/img/gradient-2@2x.png" />
+//             <div className="onboarding-header">
+//               <div className="text-wrapper-5">Onboarding</div>
+//               <div className="element-x-steps-complete">0/3 steps complete!</div>
+//             </div>
+//           </div>
+//           <div className="text-wrapper-6">Need help?</div>
+//         </div>
+//         <div className="welcome-NAME">
+//           Welcome, {"{"}NAME{"}"}!
+//         </div>
+//         <p className="let-s-make-this-easy">
+//           Let&#39;s make this easy--Please verify the information below is correct.
+//         </p>
+//         <div className="group">
+//           <p className="p">
+//             “In amet turpis eget donec bibendum sit congue cras. Fusce parturient pulvinar non a nulla dictum sit
+//             facilisi aliquet. Posuere tortor egestas orci vel. Ut nulla amet eget habitasse donec urna est iaculis
+//             tellus. Vitae morbi lorem suscipit fermentum et.”
+//           </p>
+//           <Star2 className="star" color="#8591FF" />
+//           <Star2 className="star-2" color="#8591FF" />
+//           <Star2 className="weight-fill" color="#8591FF" />
+//           <Star2 className="star-1" color="#8591FF" />
+//           <Star2 className="star-2-instance" color="#8591FF" />
+//           <div className="text-wrapper-7">Craig Craigford, Store Owner</div>
+//           <div className="text-wrapper-8">June 2023</div>
+//         </div>
+//         <div className="group-2">
+//           <div className="button-primary-large-wrapper">
+//             <Button
+//               className="button-primary-large"
+//               icon={false}
+//               size="large"
+//               state="default"
+//               text="Confirm"
+//               type="primary"
+//             />
+//           </div>
+//           <div className="input-field-sm">
+//             <div className="frame">
+//               <p className="email-address">
+//                 <span className="span">Store Name</span>
+//                 <span className="text-wrapper-9">*</span>
+//               </p>
+//             </div>
+//             <div className="group-wrapper">
+//               <div className="frame-wrapper">
+//                 <div className="div-wrapper">
+//                   <div className="text-wrapper-10">Store 123</div>
+//                 </div>
+//               </div>
+//             </div>
+//           </div>
+//           <div className="input-field-sm-2">
+//             <div className="frame">
+//               <p className="email-address">
+//                 <span className="span">Full Name</span>
+//                 <span className="text-wrapper-9">*</span>
+//               </p>
+//             </div>
+//             <div className="group-wrapper">
+//               <div className="frame-wrapper">
+//                 <div className="div-wrapper">
+//                   <div className="text-wrapper-10">Brenda Brendensen</div>
+//                 </div>
+//               </div>
+//             </div>
+//           </div>
+//           <div className="overlap-group">
+//             <div className="input-field-sm">
+//               <div className="frame">
+//                 <p className="email-address">
+//                   <span className="span">Email Address</span>
+//                   <span className="text-wrapper-9">*</span>
+//                 </p>
+//               </div>
+//               <div className="frame-2">
+//                 <div className="frame-wrapper">
+//                   <div className="frame-3">
+//                     <div className="text-wrapper-10">-</div>
+//                   </div>
+//                 </div>
+//               </div>
+//             </div>
+//             <div className="text-wrapper-11">update</div>
+//           </div>
+//           <div className="overlap-2">
+//             <div className="input-field-sm">
+//               <div className="frame">
+//                 <p className="email-address">
+//                   <span className="span">Store URL</span>
+//                   <span className="text-wrapper-9">*</span>
+//                 </p>
+//               </div>
+//               <div className="frame-2">
+//                 <div className="frame-wrapper">
+//                   <div className="frame-3">
+//                     <div className="text-wrapper-10">-</div>
+//                   </div>
+//                 </div>
+//               </div>
+//             </div>
+//             <div className="text-wrapper-11">update</div>
+//           </div>
+//         </div>
+//       </div>
+//     </div>
+//   );
+// };
+

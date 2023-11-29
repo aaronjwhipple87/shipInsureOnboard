@@ -6,8 +6,9 @@
 html,
 body {
   font-size: 14px;
-  color: #06001E;
+  color: #06001ebf;
   font-family: 'Montserrat', 'Open Sans', sans-serif;
   color: rgb(var(--foreground-rgb));
   background-color: white;
 }
+
