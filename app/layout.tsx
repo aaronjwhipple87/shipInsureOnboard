@@ -1,7 +1,8 @@
 import type { Metadata } from 'next'
 import Wrapper from './components/hoc/Wrapper'
 import './globals.css'
-import { Providers } from './providers'
+import ChakraUiProvider from './providers'
+
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -16,11 +17,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <Providers>
+        <ChakraUiProvider>
           <Wrapper>
             {children}
           </Wrapper>
-        </Providers>
+        </ChakraUiProvider>
       </body>
     </html>
   )

@@ -10,5 +10,6 @@ body {
   font-family: 'Montserrat', 'Open Sans', sans-serif;
   color: rgb(var(--foreground-rgb));
   background-color: white;
+  letter-spacing: 0.025em;
 }
 

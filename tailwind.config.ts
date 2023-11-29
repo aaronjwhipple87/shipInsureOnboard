@@ -15,6 +15,7 @@ const config: Config = {
       colors: {
         slate: '#3D5781',
         purple: '#6675FF',
+        ltPurple: '#b3baff',
         midnight: '#06001E',
         calmingBreeze: '#8591FF',
         ltGrey: '#f2f2f2',
