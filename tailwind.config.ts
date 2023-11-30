@@ -19,6 +19,7 @@ const config: Config = {
         midnight: '#06001E',
         calmingBreeze: '#8591FF',
         ltGrey: '#f2f2f2',
+        chakGry: '#a0a6b2'
       },
     },
   },

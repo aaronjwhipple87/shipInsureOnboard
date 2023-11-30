@@ -14,7 +14,7 @@ export const colors = {
 	  900: "#FF9800",
 	},
 	accent: {
-	  900: "#FAD938",
+	  900: "#6675FF",
 	},
 	text: {
 	  900: "#292929",

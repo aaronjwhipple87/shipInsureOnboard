@@ -8,7 +8,7 @@ type Props = {
 const Wrapper = ({children}:Props) => {
 
     return (
-        <div className='w-full justify-center flex md:flex-row flex-col overflow-hidden'>
+        <div className='w-full justify-center flex md:flex-row flex-col overflow-x-hidden'>
             <OnboardingMenu />
             <div className='w-full item-center text-center'>
                 {children}

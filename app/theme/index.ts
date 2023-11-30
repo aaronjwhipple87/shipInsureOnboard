@@ -4,5 +4,5 @@ import { colors } from "./colors";
 
 export const theme = extendTheme({
   colors, 
-  fonts,
+  fonts
 });

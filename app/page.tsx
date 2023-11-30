@@ -3,7 +3,7 @@ import Review from './components/Review'
 
 export default function Home() {
   return (
-    <main className="flex flex-col items-center gap-2 justify-between md:mt-10 mt-5 md:w-3/4 mx-2 md:mx-auto mb-20">
+    <main className="flex flex-col items-center gap-2 justify-between md:mt-10 mt-5 md:w-1/2 mx-2 md:mx-auto mb-20">
         <h4 className="text-heading font-bold text-2xl text-slate">
           Welcome, {"{"}NAME{"}"}!
         </h4>
